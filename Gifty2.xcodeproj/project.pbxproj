@@ -14,6 +14,9 @@
 		921BBCB829F6BB580080A311 /* Gifty2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921BBCB729F6BB580080A311 /* Gifty2Tests.swift */; };
 		921BBCC229F6BB580080A311 /* Gifty2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921BBCC129F6BB580080A311 /* Gifty2UITests.swift */; };
 		921BBCC429F6BB580080A311 /* Gifty2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921BBCC329F6BB580080A311 /* Gifty2UITestsLaunchTests.swift */; };
+		921BBCD229F6C08D0080A311 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 921BBCD129F6C08D0080A311 /* SwiftyGif */; };
+		921BBCD429F99CEF0080A311 /* AnimatedGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921BBCD329F99CEF0080A311 /* AnimatedGifView.swift */; };
+		921BBCD629F9A5AC0080A311 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921BBCD529F9A5AC0080A311 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		921BBCBD29F6BB580080A311 /* Gifty2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gifty2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921BBCC129F6BB580080A311 /* Gifty2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gifty2UITests.swift; sourceTree = "<group>"; };
 		921BBCC329F6BB580080A311 /* Gifty2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gifty2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		921BBCD329F99CEF0080A311 /* AnimatedGifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGifView.swift; sourceTree = "<group>"; };
+		921BBCD529F9A5AC0080A311 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921BBCD229F6C08D0080A311 /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,8 @@
 				921BBCA829F6BB560080A311 /* ContentView.swift */,
 				921BBCAA29F6BB570080A311 /* Assets.xcassets */,
 				921BBCAC29F6BB570080A311 /* Preview Content */,
+				921BBCD329F99CEF0080A311 /* AnimatedGifView.swift */,
+				921BBCD529F9A5AC0080A311 /* ContentViewModel.swift */,
 			);
 			path = Gifty2;
 			sourceTree = "<group>";
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = Gifty2;
+			packageProductDependencies = (
+				921BBCD129F6C08D0080A311 /* SwiftyGif */,
+			);
 			productName = Gifty2;
 			productReference = 921BBCA329F6BB560080A311 /* Gifty2.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 921BBC9A29F6BB560080A311;
+			packageReferences = (
+				921BBCD029F6C08D0080A311 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+			);
 			productRefGroup = 921BBCA429F6BB560080A311 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921BBCD629F9A5AC0080A311 /* ContentViewModel.swift in Sources */,
 				921BBCA929F6BB560080A311 /* ContentView.swift in Sources */,
 				921BBCA729F6BB560080A311 /* Gifty2App.swift in Sources */,
+				921BBCD429F99CEF0080A311 /* AnimatedGifView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		921BBCD029F6C08D0080A311 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		921BBCD129F6C08D0080A311 /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 921BBCD029F6C08D0080A311 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 921BBC9B29F6BB560080A311 /* Project object */;
 }

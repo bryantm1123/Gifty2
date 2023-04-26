@@ -1,19 +1,11 @@
-//
-//  ContentView.swift
-//  Gifty2
-//
-//  Created by Matt Bryant on 4/24/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var contentViewModel = ContentViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            AnimatedGifView(url: $contentViewModel.url)
         }
         .padding()
     }

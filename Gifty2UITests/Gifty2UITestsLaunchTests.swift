@@ -1,10 +1,3 @@
-//
-//  Gifty2UITestsLaunchTests.swift
-//  Gifty2UITests
-//
-//  Created by Matt Bryant on 4/24/23.
-//
-
 import XCTest
 
 final class Gifty2UITestsLaunchTests: XCTestCase {

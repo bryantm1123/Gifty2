@@ -1,10 +1,3 @@
-//
-//  Gifty2Tests.swift
-//  Gifty2Tests
-//
-//  Created by Matt Bryant on 4/24/23.
-//
-
 import XCTest
 @testable import Gifty2
 
